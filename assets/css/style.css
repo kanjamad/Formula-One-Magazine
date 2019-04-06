@@ -1,3 +1,10 @@
+
+:root {
+    --hero-url: url('../img/Backgroup-hearder.jpg'); 
+    --footer-url: url('../img/car1.jpg');
+    }
+
+
 /*------------------------------------------
                 Base Styles
 --------------------------------------------*/
@@ -65,7 +72,7 @@ h1 {
 header {
     padding-top: 30px;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
 }
 nav {
     position: fixed;

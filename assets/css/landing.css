@@ -1,29 +1,109 @@
+/* :root {
+  --hero-url: url('../img/Backgroup-hearder.jpg'); 
+} */
+
+
 /*------------------------------------------
                 Header
 --------------------------------------------*/
 
 header{
-    background-image: url('../img/Backgroup-hearder.jpg'); 
+    background-image: var(--hero-url);
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-     /* Set rules to fill background */
-    /* min-height: 100%;
-    min-width: 1024px; */
-	
-  /* Set up proportionate scaling */
-    /* width: 100%;
-    height: auto; */
-	
-  /* Set up positioning */
-    /* position: fixed;
-    top: 0;
-    left: 0; */
-
     background-attachment: fixed;
     height: 100vh;
     
 }
 
 
+/* Layout */
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
 
+.container {
+  max-width: 980px;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+
+
+
+/* about */
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.lead{
+  font-size:60px;
+}
+
+
+
+/* <p class> */
+p.about {
+  font-size: 18px;
+}
+
+
+
+section {
+  height: 100vh;
+}
+
+/* project */
+.projects{
+  background-color:black;
+}
+
+
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+}
+
+.project-container > div {
+  background:palevioletred;
+  width: 200px;
+  height: 200px;
+
+}
+
+
+/* footer */
+footer{
+  background-image: var(--footer-url);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+  height: 100vh; 
+  color: palevioletred;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 500px;
+
+}
