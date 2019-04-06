@@ -68,28 +68,59 @@ section {
 }
 
 /* project */
-.projects{
-  background-color:black;
+/* Projects */
+.projects {
+  background-color: #000;
 }
 
-
+.projects .lead {
+  color: var(--white);
+}
 
 .project-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project-container > div {
-  background:palevioletred;
-  width: 200px;
-  height: 200px;
+  background: palevioletred;
+  width: 220px;
+  height: 220px;
+  margin-bottom: 40px;
+}
 
+
+
+/* contact */
+.form-control {
+  margin-bottom: 30px;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: #999;
+}
+
+.form-control textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid rgb(238, 238, 238);
+}
+
+.contact-submit {
+  padding: 20px 30px;
+  background: cornflowerblue;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 6px;
+  /* float: right; */
+  width: 100%;
 }
 
 
